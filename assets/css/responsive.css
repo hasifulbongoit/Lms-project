@@ -1,11 +1,39 @@
 
 
 @media(min-width: 540px){
-
+    .our_division_wrapper{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media(min-width: 768px){
+    .banner_item_wrapper{
+        padding: 100px 0px;
+    }
 
+    .banner_heading{
+        font-size: 52px;
+        line-height: 70px;
+        margin-bottom: 30px;
+    }
+
+    .section_padding{
+        padding: 50px 0px;
+    }
+
+    .our_division_wrapper{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .section_title_heading{
+        font-size: 30px;
+        line-height: 42px;
+     }
+
+     .cousre_item_wrapper{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
 }
 
 
@@ -20,6 +48,46 @@
     .header_button{
         display: block;
     }
+
+    .banner_image {
+        position: absolute;
+        z-index: 1;
+        right: 0px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: unset;
+    }
+
+    .banner_image img{
+        max-width: 100%;
+    }
+
+    .banner_item_wrapper{
+        flex-direction: row;
+    }
+
+    .banner_item_wrapper{
+        padding: 150px 0px;
+    }
+
+    .section_padding{
+        padding: 60px 0px;
+    }
+
+    .our_division_wrapper{
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .section_title_heading{
+        font-size: 40px;
+        line-height: 52px;
+     }
+
+     .cousre_item_wrapper{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+
 }
 
 
