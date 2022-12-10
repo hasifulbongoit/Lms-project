@@ -1,9 +1,15 @@
 
 
 @media(min-width: 540px){
-    .our_division_wrapper{
+    .our_division_wrapper,
+    .whyBest_item_wrapper{
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .footer_nav {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 }
 
 @media(min-width: 768px){
@@ -21,7 +27,8 @@
         padding: 50px 0px;
     }
 
-    .our_division_wrapper{
+    .our_division_wrapper,
+    .whyBest_item_wrapper{
         grid-template-columns: repeat(3, 1fr);
     }
 
@@ -31,6 +38,18 @@
      }
 
      .cousre_item_wrapper{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .success_story_wrapper{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer_nav {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .sheba_item_wrapper{
         grid-template-columns: repeat(2, 1fr);
     }
     
@@ -74,7 +93,8 @@
         padding: 60px 0px;
     }
 
-    .our_division_wrapper{
+    .our_division_wrapper,
+    .whyBest_item_wrapper{
         grid-template-columns: repeat(6, 1fr);
     }
 
@@ -86,8 +106,11 @@
      .cousre_item_wrapper{
         grid-template-columns: repeat(3, 1fr);
     }
-    
 
+    .footer_nav {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
 }
 
 
@@ -98,5 +121,9 @@
     .header_nav{
         flex: 1;
         display: none;
+    }
+
+    .sheba_item_wrapper{
+        grid-template-columns: repeat(3, 1fr);
     }
 }

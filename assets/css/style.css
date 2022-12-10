@@ -30,7 +30,18 @@
 }
 
 .header_logo{
-    width: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.header_logo_image{
+    width: 50px;
+}
+
+.header_Text h1 {
+    font-size: 22px;
 }
 
 .header_logo img{
@@ -56,16 +67,16 @@
 
 .header_nav ul li a {
     display: inline-block;
-    padding: 8px 24px;
+    padding: 8px 18px;
     font-size: 18px;
     line-height: 20px;
     color: var(--mainColor);
     border-radius: 20px;
 }
 
-.header_nav ul li.activeList a{
-    background-color: var(--primaryColor);
-    color: var(--textColor);
+.header_nav ul li.activeList a {
+    background-color: rgb(118 120 237 / 30%);
+    color: var(--primaryColor);
 }
 
 .header_button{
@@ -387,18 +398,21 @@
 
 /* success story section */
 
-.success_story{}
+.success_story{
+    background-color: var(--secondBg);
+}
 
 .success_story_wrapper{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-gap: 30px;
 }
 
-.success_story_item{
+.success_story_item {
     position: relative;
+    border-radius: 15px;
+    overflow: hidden;
 }
-
 
 .success_story_thumbnail img{
     width: 100%;
@@ -427,4 +441,315 @@
     font-size: 40px;
     display: flex;
     color: var(--primaryColor);
+}
+
+/* best section */
+
+.why_best_section{
+    background-color: var(--bgColor);
+}
+
+.whyBest_item_wrapper{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+}
+
+.whyBest_item{
+    padding: 20px;
+    background-color: var(--textColor);
+    box-shadow: 0px 6px 12px rgb(118 120 237 / 15%);
+    text-align: center;
+    display: grid;
+    place-content: center;
+    border-radius: 12px;
+    min-height: 120px;
+}
+
+.whyBest_item_count{
+    font-size: 36px;
+    line-height: 46px;
+    color: var(--primaryColor);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.whyBest_item_title{
+    color: var(--mainColor);
+}
+
+.whyBest_item_moreLink{
+    color: var(--textNav);
+}
+
+/* testimonial section */
+
+.Testimonial_section{
+    background-image: url(../image/testimonial/testimonialbg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: var(--secondBg);
+    position: relative;
+}
+
+.Testimonial_slider{}
+
+/* animation */
+
+.testimonial_animation1{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    animation: testimonial1 linear infinite 4s;
+}
+
+@keyframes testimonial1{
+    0%{
+        bottom: 70px;
+        right: 70px;
+    }
+
+    50%{
+        bottom: 70px;
+        right: 200px;
+    }
+
+    100%{
+        bottom: 70px;
+        right: 70px;
+    }
+}
+
+.testimonial_animation1 img{
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.testimonial_animation2{
+    width: 150px;
+    position: absolute;
+    animation: testimonial2 linear infinite 5s;
+}
+
+@keyframes testimonial2{
+    
+    0%{
+        top: 20%;
+        left: 40%;
+    }
+
+    25%{
+        top: 20%;
+        left: 30%; 
+    }
+
+    50%{
+        top: 40%;
+        left: 30%;
+    }
+
+    75%{
+        top: 40%;
+        left: 40%;
+    }
+
+    100%{
+        top: 20%;
+        left: 40%;
+        
+    }
+}
+
+.testimonial_animation2 img{
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+
+.testimonial_slider_item{
+    position: relative;
+}
+
+.testimonial_slider_content{
+    text-align: center;
+}
+
+.testimonial_slider_image{
+    height: 120px;
+    width: 120px;
+    overflow: hidden;
+    border-radius: 12px;
+    margin: 0px auto 20px;
+    border: 2px solid var(--primaryColor);
+    box-shadow: 0px 10px 20px rgba(118, 120, 237, 0.3);
+}
+
+.testimonial_slider_image img{
+    width: 100%;
+
+}
+
+.testimonial_slider_name{
+    font-size: 28px;
+    color: var(--primaryColor);
+    line-height: 36px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.testimonial_slider_title{
+    font-size: 18px;
+    color: var(--textNav);
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+.testimonial_slider_text{
+    font-size: 18px;
+    color: var(--mainColor);
+    line-height: 24px;
+}
+
+/* sheba section */
+
+.sheba_section{
+    background-color: var(--bgColor);
+}
+
+.sheba_item_wrapper{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+}
+
+.sheba_item{
+    padding: 50px 25px;
+    background-color: var(--textColor);
+    position: relative;
+    border-radius: 12px;
+}
+
+.sheba_item_icon{
+    height: 80px;
+    width: 80px;
+    margin: 0px auto 30px;
+}
+
+.sheba_item_icon img{
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.sheba_item_content{
+    text-align: center;
+}
+
+.sheba_item_title{
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.sheba_item_text {
+    font-size: 18px;
+    line-height: 26px;
+    color: var(--mainColor);
+}
+
+/* footer section */
+
+.footer_section{
+    background-color: var(--primaryColor);
+    position: relative;
+}
+
+.footer_title{
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 28px;
+    margin-bottom: 47px;
+    color: var(--textColor);
+}
+
+.footer_nav {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 50px;
+}
+
+.footer_contact_info{
+    margin-bottom: 25px;
+}
+
+.contact_info_title,
+.footer_item_title{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    color: var(--textColor);
+    margin-bottom: 15px;
+}
+
+.contact_info_address:not(:last-child){
+    margin-bottom: 15px;
+}
+
+.contact_info_address{
+    font-size: 16px;
+    color: var(--textColor);
+}
+
+.footer_nav_item{
+    position: relative;
+}
+
+.footer_nav_item ul li:not(:last-child){
+    margin-bottom: 15px;
+}
+
+.footer_nav_item ul li a{
+    font-size: 16px;
+    color: var(--textColor);
+    display: block;
+}
+
+.footer_social{
+    margin-top: 30px;
+}
+
+.footer_social ul{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.footer_social ul li{
+    margin-bottom: 0px !important;
+}
+
+.footer_social ul li a{
+    display: block;
+    height: 36px;
+    width: 36px;
+    background-color: var(--textColor);
+    border-radius: 6px;
+    display: grid;
+    place-content: center;
+}
+
+.footer_socket{
+    padding-top: 50px;
+}
+
+.socket_text{
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--textColor);
 }
