@@ -1,4 +1,19 @@
 
+// review
+
+{
+
+    let studentReveiwBtn = document.getElementsByClassName("student_reviews_content")
+
+    ;[...studentReveiwBtn].forEach((reveiwsItem,index) => {
+        let studentReveiwItem = document.getElementsByClassName("student_reviews_item")[index]
+        reveiwsItem.addEventListener("click", function(){
+            studentReveiwItem.classList.toggle("activeReviews")
+        })
+    });
+
+}
+
 // strciky header
 {
     let mainHeader = document.getElementById("myHeader")
@@ -80,3 +95,4 @@
     }
 
 }
+

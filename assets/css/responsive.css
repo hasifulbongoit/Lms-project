@@ -10,6 +10,10 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .cousre_module_inner {
+        justify-content: flex-start;
+    }
+
 }
 
 @media(min-width: 768px){
@@ -41,16 +45,16 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .success_story_wrapper{
-        grid-template-columns: repeat(2, 1fr);
-    }
-
     .footer_nav {
         grid-template-columns: repeat(3, 1fr);
     }
 
     .sheba_item_wrapper{
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .student_reviewsItem_wrapper {
+        flex-direction: row;
     }
     
 }
@@ -110,6 +114,19 @@
     .footer_nav {
         grid-template-columns: repeat(4, 1fr);
     }
+
+    .cousre_details_wrapper {
+       flex-direction: row;
+    }
+
+    .cousre_details_content{
+        width: 45%;
+    }
+
+    .cousre_details_thumbnail{
+        width: 50%;
+    }
+
     
 }
 

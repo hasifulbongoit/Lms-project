@@ -75,8 +75,9 @@
 }
 
 .header_nav ul li.activeList a {
-    background-color: rgb(118 120 237 / 30%);
+    background-color: #F2F2FF;
     color: var(--primaryColor);
+    font-weight: bold;
 }
 
 .header_button{
@@ -181,7 +182,7 @@
 
 .banner_section {
     background-color: var(--bgColor);
-    margin-top: 81px;
+    margin-top: 90px;
 }
 
 .banner_slider {
@@ -403,44 +404,7 @@
 }
 
 .success_story_wrapper{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 30px;
-}
-
-.success_story_item {
-    position: relative;
-    border-radius: 15px;
-    overflow: hidden;
-}
-
-.success_story_thumbnail img{
-    width: 100%;
-    display: block;
-    min-height: 330px;
-    object-fit: cover;
-}
-
-.story_play_btn{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.story_play_btn a{
-    display: grid;
-    place-content: center;
-    height: 80px;
-    width: 80px;
-    background-color: var(--textColor);
-    border-radius: 50%;
-}
-
-.story_play_btn a i{
-    font-size: 40px;
     display: flex;
-    color: var(--primaryColor);
 }
 
 /* best section */
@@ -493,7 +457,9 @@
     position: relative;
 }
 
-.Testimonial_slider{}
+.Testimonial_slider{
+    position: relative;
+}
 
 /* animation */
 
@@ -752,4 +718,307 @@
     font-size: 16px;
     line-height: 24px;
     color: var(--textColor);
+}
+
+/* 
+============================
+single cousre page 
+===========================
+*/
+
+.single_course_section{
+    background-color: var(--bgColor);
+    margin-top: 90px;
+}
+
+.cousre_details{
+    position: relative;
+}
+
+.cousre_details_wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    gap: 50px 0px;
+}
+
+.cousre_details_content,
+.cousre_details_thumbnail{
+    width: 100%;
+}
+
+.cousre_title{
+    margin-bottom: 20px;
+}
+
+.cousre_module{
+    margin-bottom: 30px;
+}
+
+.cousre_module_inner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cousre_module_card{
+
+    padding: 11px 34px;
+    background-color: var(--textColor);
+    border: 2px solid var(--primaryColor);
+    border-radius: 12px;
+    text-align: center;
+
+}
+
+.cousre_module_tile{
+    font-size: 14px;
+    margin-bottom: 6px;
+    line-height: 20px;
+}
+
+.cousre_module_text{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.cousre_overveiw{
+    margin-bottom: 30px;
+}
+
+.cousre_overveiw_text {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+
+.cousre_overveiw_reveiw{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.overveiw_reveiw_star ul{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 3px;
+}
+
+.overveiw_reveiw_count{
+    font-size: 16px;
+}
+
+.overveiw_reveiw_student{
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--primaryColor);
+}
+
+.cousre_trainer {
+    margin-bottom: 50px;
+}
+
+.trainer_name{
+    font-size: 20px;
+    color: var(--primaryColor);
+}
+
+.trainer_name sub{
+    font-size: 16px;
+    color: var(--textNav);
+    font-weight: 400;
+}
+
+.learn_course{
+    position: relative;
+}
+
+.learn_cousre_title{
+    font-size: 32px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.learn_cousre_list ul li {
+    padding-left: 30px;
+    font-size: 18px;
+    line-height: 26px;
+    position: relative;
+}
+
+.learn_cousre_list ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.learn_cousre_list ul li::after{
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: var(--primaryColor);
+    top: 50%;
+    left: 0px;
+    transform: translateY(-50%);
+}
+
+/* thumbnail */
+
+.Singlecousre_price{
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.Singlecousre_video{
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    height: 300px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.Singlecousre_image{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.Singlecousre_image img{
+    width: 100%;
+    display: block;
+}
+
+.video_play_button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.video_play_button a{
+    height: 50px;
+    width: 50px;
+    background-color: var(--textColor);
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+}
+
+.single_course_button{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.student_reviews{
+    margin-top: 50px;
+}
+.student_reviews_title{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.student_reviews_content{
+    cursor: pointer;
+}
+
+.student_review_inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.overveiw_reveiw_star ul li span{
+    display: flex;
+}
+
+.student_reviewsItem_wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.student_reviews_item{
+    padding: 11px 30px;
+    background-color: var(--textColor);
+    border-radius: 12px;
+    border: 2px solid transparent;
+    overflow: hidden;
+    box-shadow: 0px 8px 16px rgba(118, 120, 237, 0.2);
+    transition: all linear 0.1s;
+}
+
+.student_reviews_item.activeReviews{
+    border: 2px solid var(--primaryColor);
+}
+
+.student_reveiw_count {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.student_review_arrow span {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: var(--textColor);
+    display: grid;
+    place-content: center;
+    border: 2px solid var(--primaryColor);
+    color: var(--primaryColor);
+    transform: rotate(180deg);
+    transition: all linear 0.1s;
+}
+
+.activeReviews .student_reviews_text{
+    padding: 15px 0px;
+    border-top: 1px solid rgb(157 180 192 / 40%);
+    height: auto;
+    margin-top: 10px;
+    opacity: 1;
+}
+
+.student_reviews_text {
+    color: var(--mainColor);
+    transition: 0.1s;
+    height: 0px;
+    opacity: 0;
+}
+
+.related_course{
+    margin-top: 40px;
+}
+
+.raladet_corse_heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.raladet_corse_title{
+    font-size: 24px;
+}
+
+.activeReviews .student_review_arrow span{
+    transform: rotate(0);
+}
+
+.related_more_btn a{
+    display: block;
+    text-decoration: underline !important;
+    color: var(--primaryColor);
 }
