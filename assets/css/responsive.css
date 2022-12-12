@@ -56,6 +56,15 @@
     .student_reviewsItem_wrapper {
         flex-direction: row;
     }
+
+    .contact_details_wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 80px;
+    }
+
+    .contact_form_inner {
+        flex-flow: row;
+    }
     
 }
 
@@ -125,6 +134,44 @@
 
     .cousre_details_thumbnail{
         width: 50%;
+    }
+
+    .faq_section_wrapper{
+        flex-direction: row;
+    }
+
+    .faq_left_content {
+      text-align: left;
+    }
+
+    .faq_content{
+        width: 100%;
+    }
+
+    .faq_left_image {
+        margin: 0px 0px 20px;
+    }
+
+    .faq_left {
+        width: 45%;
+    }
+
+    .faq_content{
+        width: 48%;
+    }
+
+    .service_section_wrapper{
+        flex-direction: row;
+    }
+
+    .service_content,
+    .service_thumbnail{
+        width: 48%;
+    }
+
+    .contact_details_wrapper {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 80px;
     }
 
     

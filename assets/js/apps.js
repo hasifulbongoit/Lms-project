@@ -1,4 +1,26 @@
 
+// acordian
+{
+    let acordionBtn = document.getElementsByClassName("faq_item_button")
+
+    // try another
+    ;[...acordionBtn].forEach((currentItem, i) => {
+
+        let acordionItem = document.getElementsByClassName("faq_item")[i]
+
+        currentItem.addEventListener("click", () =>{
+
+            let showClass = document.querySelector(".showAcordion")
+
+            if(!acordionItem.classList.contains("showAcordion") && showClass){
+                showClass.classList.remove("showAcordion")
+            }
+
+            acordionItem.classList.toggle("showAcordion")
+        })
+    });
+}
+
 // review
 
 {
@@ -13,6 +35,8 @@
     });
 
 }
+
+
 
 // strciky header
 {
