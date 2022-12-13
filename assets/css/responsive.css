@@ -14,6 +14,10 @@
         justify-content: flex-start;
     }
 
+    .checkout_payment_wrapper {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
 }
 
 @media(min-width: 768px){
@@ -64,6 +68,14 @@
 
     .contact_form_inner {
         flex-flow: row;
+    }
+
+    .checkout_wrapper{
+        flex-direction: row;
+    }
+
+    .checkout_content{
+        width: 56%;
     }
     
 }
