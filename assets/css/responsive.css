@@ -77,6 +77,33 @@
     .checkout_content{
         width: 56%;
     }
+
+    .login_page_wrapper{
+        align-items: flex-start;
+        flex-direction: row;
+    }
+
+    .login_page_right{
+        max-width: 477px;
+        width: 100%;
+    }
+
+    .login_page_content{
+        max-width: 592px;
+        width: 100%;
+    }
+
+    .log_page_title {
+        font-size: 36px;
+        line-height: 48px;
+        margin-bottom: 20px;
+    }
+    
+    .otp_form_wrapper,
+    .login_form_wrapper,
+    .login_submit_btn{
+        max-width: 540px;
+    }
     
 }
 
@@ -184,6 +211,12 @@
     .contact_details_wrapper {
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 80px;
+    }
+
+    .log_page_title {
+        font-size: 40px;
+        line-height: 58px;
+        margin-bottom: 20px;
     }
 
     

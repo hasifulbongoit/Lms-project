@@ -725,7 +725,7 @@
 
 
 .faq_item_button {
-    padding: 16px 16px 16px 16px;
+    padding: 25px 16px 25px 16px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1822,4 +1822,249 @@ single cousre page
 
 .our_trainer_position span{
     color: var(--primaryColor);
+}
+
+/* login page */
+
+.login_page{
+    background-color: var(--bgColor);
+    margin-top: 90px;
+}
+
+.login_page_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.login_page_right{
+    width: 100%;
+}
+
+.login_page_content{
+    width: 100%;
+}
+
+.log_page_title {
+    font-size: 30px;
+    line-height: 42px;
+    margin-bottom: 20px;
+}
+
+.login_content_text{
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.login_form_wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.login_form_title{
+    font-size: 18px;
+    line-height: 29px;
+    color: var(--mainColor);
+    margin-bottom: 10px;
+    display: block;
+}
+
+.login_input_inner{
+    position: relative;
+    width: 100%;
+    height: 60px;
+}
+
+.input_control_login{
+    border: 1px solid red;
+}
+
+.input_alert_icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    background: var(--textColor);
+    z-index: 1;
+    /* display: none; */
+}
+
+.input_alert_text {
+    text-align: right;
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
+    color: red;
+    /* visibility: hidden; */
+}
+
+.login_submit_btn {
+    text-align: center;
+    width: 100%;
+    margin-top: 60px;
+}
+ 
+.login_submit_btn a{
+    display: block;
+    padding: 16px;
+    background-color: var(--primaryColor);
+    border-radius: 12px;
+    color: var(--textColor);
+    font-size: 18px;
+    line-height: 28px;
+}
+
+
+.login_left_image{
+    position: relative;
+}
+
+.login_left_image img{
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.login_right_text{
+    text-align: center;
+    margin: 30px auto 0px;
+    font-size: 21px;
+    line-height: 30px;
+    color: var(--primaryColor);
+    font-weight: 700;
+    max-width: 296px;
+    width: 100%;
+}
+
+/* otp page */
+
+.otp_form_wrapper{
+    width: 100%;
+    position: relative;
+}
+
+.otp_form_title{
+    font-size: 18px;
+    line-height: 29px;
+    color: var(--mainColor);
+    margin-bottom: 10px;
+    display: block;
+}
+
+.otp_form_inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.otp_form_input{
+    height: 60px;
+    width: calc(25% - 10px);
+}
+
+.otp_input_control{
+    border: 2px solid transparent;
+}
+
+.otp_input_control:focus{
+    border: 2px solid var(--primaryColor);
+}
+
+/* admision form */
+
+.adminsion_form {
+    background-color: rgb(5 25 35 / 50%);
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0px;
+    left: 0px;
+    z-index: 999;
+}
+
+.adminsion_form_content {
+    max-width: 1140px;
+    max-height: calc(100vh - 10vh);
+    background: #FAF9F9;
+    padding: 60px;
+    border-radius: 10px;
+    overflow-y: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.admision_form_title {
+    font-size: 42px;
+    margin-bottom: 30px;
+}
+
+.admision_form_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.admision_input_inner{
+    width: calc(50% - 15px);
+}
+
+.admision_select_inner{
+    width: 100%;
+}
+
+.input_control_admision{
+    height: 50px;
+    background-color: var(--bgColor);
+    padding: 0px 30px;
+}
+
+.admision_input_title,
+.coursez_select_title {
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 10px;
+    color: var(--primaryColor);
+    font-weight: 600;
+}
+
+.cousre_select_wrapper{
+    margin-top: 30px;
+}
+
+.cousre_select_inner{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 60px;
+}
+
+.coursez_select_title{
+    font-weight: 400;
+    margin-left: 10px;
+
+}
+
+.admision_form_btn{
+    max-width: 500px;
+    width: 100%;
+    background-color: var(--primaryColor);
+    border-radius: 12px;
+    margin: 60px auto 0px;
+    height: 50px;
+    display: grid;
+    place-content: center;
+}
+.admision_form_btn a{
+    font-size: 18px;
+    color: var(--textColor);
+    display: block;
+    font-weight: 600;
+    display: block;
 }
